@@ -38,4 +38,7 @@ QUnit.test('figure 8.32 code tests', function(assert) {
     /*printOrders() doesnt actually return anything, so truck.js had to be changed
     to return a string for the tests to work correctly*/
     assert.equal(myTruck.printOrders(), 'Truck #ncc-1701 has pending orders:\nme@goldfinger.com: double mocha\ndr@no.com: decaf\nm@bond: earl grey\n');
+    myTruck.deliverOrder('dr@no.com);
+    myTruck.deliverOrder('m@bond.com');
+    assert.equal(myTruck.printOrders(), 'Truck #ncc-1701 has pending orders:\nme@goldfinger.com: double mocha\n');
 });
