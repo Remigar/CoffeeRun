@@ -32,7 +32,7 @@ QUnit.test('figure 8.32 code tests', function(assert) {
         coffee: 'decaf'
     });
     myTruck.createOrder({
-        emailAddress: 'm@bond',
+        emailAddress: 'm@bond.com',
         coffee: 'earl grey'
     });
     /*printOrders() doesnt actually return anything, so truck.js had to be changed
